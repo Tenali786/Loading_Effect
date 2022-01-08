@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <title>Tenali Ramkrishna </title>
+    <style>
+
+        body{
+            display:flex;
+            justify-content:center;
+            background:#000;
+        }
+        .container{
+            position:relative;
+            top:30px;
+            color:white;
+            -webkit-box-reflect:below -12px linear-gradient( transparent,rgba(0,0,0,0.2));
+            border-bottom: 2px solid white;
+            height: 80px;
+        }
+        
+        .container span{
+            position:relative;
+            display:inline-block;
+            font-size:5rem;
+            animation:loading 1s linear infinite;
+            animation-delay:calc(0.1s *var(--i))
+
+        }
+        @keyframes loading{
+            0%{
+                transform:translateY(0);
+            }
+            50%{
+                transform:translateY(-20px);
+                color:blue;
+                text-shadow: 0px 0px 8px rgb(255, 255, 255);
+                
+            }
+            40%,100%{
+                transform:translateY(0);
+                
+            }
+        }
+     </style>
+
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <span style="--i:1">L</span>
+        <span style="--i:2">A</span>
+        <span style="--i:3">O</span>
+        <span style="--i:4">D</span>
+        <span style="--i:5">I</span>
+        <span style="--i:6">N</span>
+        <span style="--i:7">G</span>
+        <span style="--i:8">.</span>
+        <span style="--i:9">.</span>
+        <span style="--i:10">.</span>
+       
+    </div>
+</body>
+
+</html>
